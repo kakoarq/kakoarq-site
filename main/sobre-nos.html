@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/estilo.css" />
+  <link rel="stylesheet" href="../css/fonts.css" />
+  <link rel="stylesheet" href="../css/scroll.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/sobre-nos.css">
+  <title>Sobre Nós</title>
+</head>
+
+<body>
+  <header>
+    <div class="containerHeader">
+        <a href="index.html" class="logoHeader"><img src="../assets/imagens/logo/logoPreto.jpg" style="height: 100px " /></a>
+        <nav class="desktopNav">
+            <a href="index.html" class="linkPrincipal">Página Inicial</a>
+            <a href="sobre-nos.html" class="linkPrincipal">Sobre Nós</a>
+            <a href="projetos.html" class="linkPrincipal">Portfólio</a>
+            <a href="contato.html" class="linkPrincipal">Contato</a>
+            <a href="sobre-nos.html" class="linkPrincipal Btn-Idioma">PT</a>
+            <a href="en/sobre-nos.html" class="linkPrincipal Btn-Idioma">EN</a>
+        </nav>
+        <button class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <nav class="mobileNav">
+        <a href="index.html" class="linkPrincipal">Página Inicial</a>
+        <a href="sobre-nos.html" class="linkPrincipal">Sobre Nós</a>
+        <a href="projetos.html" class="linkPrincipal">Portfólio</a>
+        <a href="contato.html" class="linkPrincipal">Contato</a>
+    </nav>
+</header>
+
+  <main class="max-width">
+
+
+    <section class="conteudo-sobre-nos hidden">
+      <div class="projetosTituloContainer" style="padding-left: 0px; margin-bottom: 0px">
+        <p class="projetosTitulo" style="margin-bottom: 50px;">Nossa História</p>
+        <p class="descricao">
+          Nossa história se inicia no ano de 2023 com a junção dos arquitetos e urbanistas Vinícius Cataldi e Thais
+          Copolla, primos e sócios, que trabalham com construção civil e arquitetura desde 2016, em renomados
+          escritórios de arquitetura, atuando com muito compromentimento e empenho em todos nossos projetos.
+          Juntando suas experiências e vivências para assim criar a KaKo juntos, com um objetivo: criar e materializar
+          sonhos.
+        </p>
+      </div>
+      <div class="imagemContainer">
+        <img src="../assets/imagens/logo/logoPreto.jpg" alt="Uma imagem representativa da história da empresa">
+      </div>
+    </section>
+
+
+
+    <section class="showcase hidden">
+      <blockquote>
+        <p>"Arquitetura é um estado de espírito e não uma profissão."</p>
+        <cite>Le Corbusie</cite>
+      </blockquote>
+      <!-- Repita para mais citações, se necessário -->
+    </section>
+  </main>
+  <section class="sobreNos-container hidden">
+    <div class="conteudo-sobre-nos">
+      <div class="sobreNos-texto">
+        <h2>Nossa Missão</h2>
+        <p>O nosso objetivo aqui na Kako é criar e proporcionar ambientes que inspirem e estimule as emoções de nossos clientes, trazendo junto a praticidade e a ergonomia para o nosso dia a dia.</p>
+
+        <h2>Nossos Valores</h2>
+        <ul>
+          <li>Inovações</li>
+          <li>Compromentimento</li>
+          <li>Qualidade</li>
+          <li>Transparência </li>
+        </ul>
+      </div>
+
+      <div class="imagemContainer">
+        <img src="../assets/imagens/Plano de Fundo copiar.png" alt="Imagem representativa da cultura da empresa">
+        <!-- Substitua pelo caminho correto da imagem -->
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="max-width-footer">
+      <div class="footer-content">
+
+        <div class="footer-section">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="index.html" class="linkPrincipal">Página Inicial</a></a></li>
+            <li><a href="sobre-nos.html" class="linkPrincipal">Sobre Nós</a></li>
+            <li><a href="projetos.html" class="linkPrincipal">Portfólio</a></li>
+            <li><a href="contato.html" class="linkPrincipal">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Entre em Contato</h4>
+          <ul>
+            <li><i class="icon-location"></i> Endereço da sua empresa</li>
+            <li><i class="icon-phone"></i> +55 11 1234-5678</li>
+            <li><i class="icon-email"></i> email@dominio.com</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Redes Sociais</h4>
+          <a href="https://www.instagram.com/kakoarq/"><i class="fab fa-instagram fa-2x custom"></i></a>
+
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Nome da Sua Empresa. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/toogleMenu.js"></script>
+  <script src="../js/checkWindowSize.js"></script>
+  <script src="../js/bloquearImg.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const elementsToShow = document.querySelectorAll(".hidden");
+
+      function checkIfInView() {
+        const windowHeight = window.innerHeight;
+
+        elementsToShow.forEach(function (element) {
+          const distanceFromTop = element.getBoundingClientRect().top;
+
+
+          if (distanceFromTop <= windowHeight) {
+            element.classList.add("visible");
+          }
+        });
+      }
+
+
+      checkIfInView();
+      window.addEventListener("scroll", checkIfInView);
+    });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/estilo.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    <link rel="stylesheet" href="../../css/scroll.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="estiloProjeto.css">
+    <title>Children's Room</title>
+</head>
+
+<body>
+    <button id="rounded-btn" class="rounded-button">+</button>
+    <header>
+        <div class="containerHeader">
+            <a href="../index.html" class="logoHeader"><img src="../../assets/imagens/logo/logoPreto.jpg"
+                style="height: 100px" /></a>
+            <nav class="desktopNav">
+                <a href="../index.html" class="linkPrincipal">Home Page</a>
+                <a href="../sobre-nos.html" class="linkPrincipal">About Us</a>
+                <a href="../projetos.html" class="linkPrincipal">Portfolio</a>
+                <a href="../contato.html" class="linkPrincipal">Contact</a>
+                <a href="../../projetos/infantil.html" class="linkPrincipal Btn-Idioma">PT</a>
+                <a href="../projetos/infantil.html" class="linkPrincipal Btn-Idioma">EN</a>
+            </nav>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobileNav">
+            <a href="../index.html" class="linkPrincipal">Home Page</a>
+            <a href="../sobre-nos.html" class="linkPrincipal">About Us</a>
+            <a href="../projetos.html" class="linkPrincipal">Portfolio</a>
+            <a href="../contato.html" class="linkPrincipal">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hidden">
+        <div class="max-width">
+            <div class="projetosTituloContainer">
+                <h1 class="projetosTitulo marginBottom">Children's Room</h1>
+                <p class="descricao">
+                    3D Design by KAKO – Responsible Architectural Project - City.
+                </p>
+                <button id="expandButton" class="BtnExpandir">Expand</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionToToggle" class="max-width">
+        <div id="umaImagem" class="marginBottom hidden">
+            <img src="../../assets/imagens/projeto/infantil/infantil2.jpg">
+        </div>
+        <div id="duasImagem" class="marginBottom hidden">
+            <img src="../../assets/imagens/projeto/infantil/infantil1.jpg">
+            <img src="../../assets/imagens/projeto/infantil/infantil3.jpg">
+        </div>
+        <div id="umaImagem" class="marginBottom hidden">
+            <img src="../../assets/imagens/projeto/infantil/infantil4.jpg">
+        </div>
+        <div id="duasImagem" class="marginBottom hidden">
+            <img src="../../assets/imagens/projeto/infantil/infantil8.jpg">
+            <img src="../../assets/imagens/projeto/infantil/infantil7.jpg">
+        </div>
+        <div id="duasImagem" class="marginBottom hidden">
+            <img src="../../assets/imagens/projeto/infantil/infantil5.jpg">
+            <img src="../../assets/imagens/projeto/infantil/infantil6.jpg">
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="max-width-footer">
+            <div class="footer-content">
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html" class="linkPrincipal">Home Page</a></a></li>
+                        <li><a href="../sobre-nos.html" class="linkPrincipal">About Us</a></li>
+                        <li><a href="../projetos.html" class="linkPrincipal">Portfolio</a></li>
+                        <li><a href="../contato.html" class="linkPrincipal">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="icon-phone"></i> +55 11 97423-1494</li>
+                        <li><i class="icon-phone"></i> +55 12 99792-6258</li>
+                        <li><i class="icon-email"></i> email@dominio.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Social Media</h4>
+                    <a href="https://www.instagram.com/kakoarq/"><i class="fab fa-instagram fa-2x custom"></i></a>
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Kako. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../../js/checkWindowSize.js"></script>
+    <script src="../../js/toogleMenu.js"></script>
+    <script src="../../js/expandir_contrairen.js"></script>
+    <script src="../../js/bloquearImg.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Lista de elementos que queremos animar
+            const elementsToShow = document.querySelectorAll(".hidden");
+
+            function checkIfInView() {
+                const windowHeight = window.innerHeight;
+
+                elementsToShow.forEach(function (element) {
+                    const distanceFromTop = element.getBoundingClientRect().top;
+
+                    // Se o elemento estiver na viewport, adicione a classe .visible
+                    if (distanceFromTop <= windowHeight) {
+                        element.classList.add("visible");
+                    }
+                });
+            }
+
+            // Verifique ao carregar a página e ao rolar
+            checkIfInView();
+            window.addEventListener("scroll", checkIfInView);
+        });
+
+    </script>
+</body>
+
+</html>

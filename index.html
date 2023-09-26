@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/estilo.css" />
+  <link rel="stylesheet" href="./css/fonts.css" />
+  <link rel="stylesheet" href="./css/scroll.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <title>Página Inicial</title>
+</head>
+
+<body>
+  <header>
+    <div class="containerHeader">
+        <a href="index.html" class="logoHeader"><img src="./assets/imagens/logo/logoPreto.jpg" style="height: 100px" /></a>
+        <nav class="desktopNav">
+            <a href="index.html" class="linkPrincipal">Página Inicial</a>
+            <a href="sobre-nos.html" class="linkPrincipal">Sobre Nós</a>
+            <a href="projetos.html" class="linkPrincipal">Portfólio</a>
+            <a href="contato.html" class="linkPrincipal">Contato</a>
+            <a href="index.html" class="linkPrincipal Btn-Idioma">PT</a>
+            <a href="en/index.html" class="linkPrincipal Btn-Idioma">EN</a>
+        </nav>
+        <button class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <nav class="mobileNav">
+        <a href="index.html" class="linkPrincipal">Página Inicial</a>
+        <a href="sobre-nos.html" class="linkPrincipal">Sobre Nós</a>
+        <a href="projetos.html" class="linkPrincipal">Portfólio</a>
+        <a href="contato.html" class="linkPrincipal">Contato</a>
+    </nav>
+</header>
+
+  <main>
+    <section class="showcase hidden">
+      <div class="conteudo">
+        <div class="letreiro"></div>
+        <div class="imagemContainer">
+          <div class="imagem">
+            <img src="./assets/imagens/projeto/Chileno/Enscape_2023-06-26-15-32-53.jpg" class="imgSlide"
+              alt="Imagem 1" />
+            <img src="./assets/imagens/projeto/hotel/CLAUDIA (4).jpg" class="imgSlide" alt="Imagem 2" />
+            <img src="./assets/imagens/projeto/Gaivotas/frontal2.jpg" class="imgSlide" alt="Imagem 3" />
+            <img src="./assets/imagens/projeto/infantil/infantil2.jpg" class="imgSlide" alt="Imagem 3" />
+            <img src="./assets/imagens/projeto/projeto_juquehy/Acqua/aqua5.jpg" class="imgSlide" alt="Imagem 3" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="sobreNos hidden">
+    <div class="max-width">
+      <div class="projetosTituloContainer" style="margin-bottom: 0px;">
+        <p class="projetosTitulo">Sobre Nós</p>
+      </div>
+      <div class="sobreNos-content">
+        <div class="sobreNos-texto">
+          <p>Acreditamos que um ambiente impacta nossas vidas e também as nossas emoções, por isso o nosso objetivo aqui
+            na Kako é criar e proporcionar ambientes que inspirem e estimule as emoções de nossos clientes, trazendo
+            junto a praticidade e a ergonomia para o nosso dia a dia. Desenvolvemos projetos criativos e inovadores de
+            acordo com as necessidades do cliente, e buscamos auxiliar e ajudar nas decisões e escolhas do começo ao fim
+            dos projetos.</p>
+          <a href="sobre-nos.html" class="saibaMais">Saiba mais</a>
+        </div>
+        <div class="sobreNos-imagem">
+          <img src="./assets/imagens/logo/logoPreto.jpg" alt="Equipe de Arquitetura">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hidden">
+    <div class="max-width" id="section-target">
+      <div class="projetosTituloContainer">
+        <p class="projetosTitulo">Conheça nossos projetos</p>
+      </div>
+      <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+          <a href="projetos/espaço_casamento.html">
+            <li class="card">
+              <div class="img">
+                <img src="./assets/imagens/projeto/Chileno/Enscape_2023-06-26-15-32-53.jpg" alt="img"
+                  draggable="false" />
+              </div>
+              <h2>Espaço de Eventos</h2>
+            </li>
+          </a>
+          <a href="projetos/Hotel.html">
+            <li class="card">
+              <div class="img">
+                <img src="./assets/imagens/projeto/hotel/CLAUDIA (5).jpg" alt="img" draggable="false" />
+              </div>
+              <h2>Hotel Beira Mar</h2>
+            </li>
+          </a>
+          <a href="projetos/projeto_juquehy.html">
+            <li class="card">
+              <div class="img">
+                <img src="./assets/imagens/projeto/projeto_juquehy/Acqua/aqua4.jpg" alt="img" draggable="false" />
+              </div>
+              <h2>Projeto de Condomínio Residencial</h2>
+            </li>
+          </a>
+          <a href="projetos/projeto_gaivotas.html">
+            <li class="card">
+              <div class="img">
+                <img src="./assets/imagens/projeto/Gaivotas/frontal2.jpg" alt="img" draggable="false" />
+              </div>
+              <h2>Projeto de Edifício Residencial</h2>
+            </li>
+          </a>
+          <a href="projetos/infantil.html">
+            <li class="card">
+              <div class="img">
+                <img src="./assets/imagens/projeto/infantil/infantil1.jpg" alt="img" draggable="false" />
+              </div>
+              <h2>Quarto Infantil</h2>
+            </li>
+          </a>
+          <a href="projetos/projeto_comercial.html">
+            <li class="card">
+              <div class="img">
+                <img src="./assets/imagens/projeto/projetoComercial/1.png" alt="img" draggable="false" />
+              </div>
+              <h2>Blanche Pearson</h2>
+            </li>
+          </a>
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+    </div>
+  </section>
+  <section class="max-width sobreNos hidden">
+    <div class="projetosTituloContainer">
+      <p class="projetosTitulo">Serviços Oferecidos</p>
+    </div>
+    <div class="container-servicos">
+      <div class="card-servico">
+        <div class="service-item">
+          <i class="fas fa-home fa-3x"></i>
+          <h3>Design Residencial</h3>
+          <p>Planejar e organizar o interior de cada ambiente, trazendo aconchego, beleza e harmonia.</p>
+        </div>
+      </div>
+      <div class="card-servico">
+        <div class="service-item">
+          <i class="fas fa-store fa-3x"></i>
+          <h3>Design Comercial</h3>
+          <p>Projetar ambientes funcionais para uso comercial, de modo a melhorar a praticidade do ambiente.</p>
+        </div>
+      </div>
+      <div class="card-servico">
+        <div class="service-item">
+          <i class="fas fa-leaf fa-3x"></i>
+          <h3>Paisagismo</h3>
+          <p>Visa organizar a paisagem, com elementos funcionais e estéticos, compondo um espaço livre com vegetação e
+            equipamentos.</p>
+        </div>
+      </div>
+      <div class="card-servico">
+        <div class="service-item">
+          <i class="fas fa-cubes fa-3x"></i>
+          <h3>Archviz</h3>
+          <p>Imagens virtuais de projetos arquitetônicos, como imagens 3D, fotos 360, tour virtual.</p>
+        </div>
+      </div>
+      <div class="card-servico">
+        <div class="service-item">
+          <i class="fas fa-hard-hat fa-3x"></i>
+          <h3>Acompanhamento de Obra</h3>
+          <p>Fiscalização da obra, de modo à garantir a execução correta dos afazeres da construção.</p>
+        </div>
+      </div>
+      <div class="card-servico">
+        <div class="service-item">
+          <i class="fas fa-landmark fa-3x"></i>
+          <h3>Prefeitura</h3>
+          <p>Auxilio, regularização e aprovação de projetos em prefeituras.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer hidden">
+    <div class="max-width-footer">
+      <div class="footer-content">
+
+        <div class="footer-section">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="index.html" class="linkPrincipal">Página Inicial</a></a></li>
+            <li><a href="sobre-nos.html" class="linkPrincipal">Sobre Nós</a></li>
+            <li><a href="projetos.html" class="linkPrincipal">Portfólio</a></li>
+            <li><a href="contato.html" class="linkPrincipal">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Entre em Contato</h4>
+          <ul>
+            <li><i class="icon-phone"></i> +55 11 97423-1494</li>
+            <li><i class="icon-phone"></i> +55 12 99792-6258</li>
+            <li><i class="icon-email"></i> contato@kakoarq.com.br</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Redes Sociais</h4>
+          <a href="https://www.instagram.com/kakoarq/"><i class="fab fa-instagram fa-2x custom"></i></a>
+
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Nome da Sua Empresa. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./js/animations.js"></script>
+  <script src="./js/animationsFoto.js"></script>
+  <script src="./js/animationsProjetos.js"></script>
+  <script src="./js/toogleMenu.js"></script>
+  <script src="./js/checkWindowSize.js"></script>
+  <script src="./js/bloquearImg.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const elementsToShow = document.querySelectorAll(".hidden");
+
+      function checkIfInView() {
+        const windowHeight = window.innerHeight;
+
+        elementsToShow.forEach(function (element) {
+          const distanceFromTop = element.getBoundingClientRect().top;
+
+          if (distanceFromTop <= windowHeight) {
+            element.classList.add("visible");
+          }
+        });
+      }
+
+      checkIfInView();
+      window.addEventListener("scroll", checkIfInView);
+    });
+
+  </script>
+
+  <script></script>
+</body>
+
+</html>

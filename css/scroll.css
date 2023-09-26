@@ -1,0 +1,21 @@
+/* Largura da barra de rolagem vertical e altura da barra de rolagem horizontal */
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 10px;
+}
+
+/* Fundo da track da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: transparent; /* Torna a track transparente */
+}
+
+/* Estilo do polegar da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px; 
+}
+
+/* Efeito de hover no polegar da barra de rolagem */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

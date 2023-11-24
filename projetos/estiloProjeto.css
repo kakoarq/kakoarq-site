@@ -2,6 +2,11 @@
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     color: #c0c0c0;
+    margin-bottom: 15px;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 #umaImagem>img {

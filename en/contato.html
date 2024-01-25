@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/scroll.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="stylesheet" href="../css/form.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../js/sendEmail.js"></script>
     <title>Contact</title>
 </head>
 
@@ -40,7 +42,7 @@
     <section class="max-width" style="margin-top: 50px;">
         <div class="containerFormImg">
             <div class="contact-form">
-                <form action="/path/to/your/server-side/script" method="post">
+                <form id ="myForm" method="post">
                     <div class="input-group">
                         <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
                         <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
@@ -96,6 +98,7 @@
     <script src="../js/toogleMenu.js"></script>
     <script src="../js/checkWindowSize.js"></script>
     <script src="../../js/bloquearImg.js"></script>
+
 </body>
 
 </html>
